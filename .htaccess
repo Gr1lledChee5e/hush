@@ -1,0 +1,10 @@
+# Hush Machine — yeete.ai/hush/
+DirectoryIndex index.html
+<IfModule mod_headers.c>
+  <FilesMatch "\.html$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+</IfModule>
+<FilesMatch "\.(md|py|sql)$">
+  Require all denied
+</FilesMatch>
